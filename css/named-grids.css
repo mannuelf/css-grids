@@ -4,14 +4,14 @@ body {
 
 #container {
     display: grid;
-    grid-template-columns: 150px auto;
-    grid-template-rows:  100px auto 100px;
+    grid-template-columns: 150px 100px auto;
+    grid-template-rows:  40px 100px 20px;
     grid-template-areas:
-        "header header"
-        "nav main"
-        "footer footer";
-    grid-gap: 1em;
-    /* grid-column-gap: 1em; */
+        "header header header"
+        "nav aside main"
+        "footer footer footer";
+    /* grid-gap: 1em; */
+    grid-column-gap: 1em;
     /* grid-row-gap: 1em; */
 }
 
@@ -28,6 +28,11 @@ nav {
 main {
     grid-area: main;
     background: rgb(180, 68, 124);
+}
+
+aside {
+    grid-area: aside;
+    background: rgb(116, 31, 165);
 }
 
 footer {
