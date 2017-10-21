@@ -1,0 +1,40 @@
+body {
+    background: greenyellow;
+}
+
+.container {
+    width: 500px;
+    line-height: 5;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1em;
+
+}
+
+.item {
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item:first-child {
+    background-color: lightblue;
+
+    /*short hand*/
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+
+    /*long hand*/
+    /* grid-row-start: 2;
+    grid-row-end: 3; 
+
+    grid-column-start: 2;
+    grid-column-end: 2; */
+}
+
+.item:last-child {
+    background-color: palegoldenrod;
+    grid-column: 2 / 5; 
+}
