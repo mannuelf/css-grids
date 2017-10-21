@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    background: #2f5374;
+}
+
+.container {
+    width: 90%;
+    line-height: 5;
+    margin: 50px auto;
+    background-color: rgb(179, 179, 22);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+
+.container > div {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFF;
+    padding: 10px;
+}
