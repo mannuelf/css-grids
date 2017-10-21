@@ -1,0 +1,12 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mannuelf/css-grids.git",
+  "author": "mannuelf <mannuel.ferreira@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-generator": "^4.15.5"
+  }
+}
