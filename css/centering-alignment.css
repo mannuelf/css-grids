@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    border: 10px solid green;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    place-items: stretch stretch;
+    justify-content: space-around;
+    align-content:  space-around;
+}
+
+.itm {
+    background: #FFF;
+}
+
+.item {
+    /* We center the contents of these items. You can also do this with flexbox too! */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5em;
+    font-size: 2rem;
+    background-color: var(--green);
+    /* best colour */
+}
+
+.item p {
+    margin: 0 0 5px 0;
+}
