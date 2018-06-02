@@ -5,7 +5,11 @@
   "repository": "git@github.com:mannuelf/css-grids.git",
   "author": "mannuelf <mannuel.ferreira@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "browser-sync start --serve --files '**/*.css,**/*.html,**/*.js' --directory --port 7777 --browser 'FirefoxDeveloperEdition'",
+  },
   "dependencies": {
+    "browser-sync": "^2.24.4",
     "express": "^4.16.2",
     "express-generator": "^4.15.5"
   }
