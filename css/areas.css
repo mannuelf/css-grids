@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 420px 1fr;
+    grid-template-rows: 150px 150px 100px;
+    grid-template-areas: 
+        "sidebar-1 content sidebar-2"
+        "sidebar-1 content sidebar-2"
+        "footer    footer  footer";
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.item1 {
+    grid-area: sidebar-1;
+}
+
+.item2 {
+    grid-area: content;
+}
+
+.item3 {
+    grid-area: sidebar-2;
+}
+
+@media (max-width: 640px) {
+    .container {
+        grid-template-areas: 
+        "content content content"
+        "sidebar-1 sidebar-1 sidebar-2"
+        "footer    footer  footer";
+    }
+}
+
+/* Each item in our grid will contain numbers */
+.item {
+    /* We center the contents of these items. You can also do this with flexbox too! */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5em;
+    font-size: 2rem;
+    background-color: var(--green);
+}
+
+.item p {
+    margin: 0 0 5px 0;
+}
