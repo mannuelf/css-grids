@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 100px);
+    /* grid-template-columns: repeat(auto-fit, 100px); */
+}
+
+/* Each item in our grid will contain numbers */
+.item {
+    /* We center the contents of these items. You can also do this with flexbox too! */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5em;
+    font-size: 2rem;
+    background-color: var(--green);
+}
+
+.item4 {
+    grid-column-end: -1;
+}
+
+
+.item p {
+    margin: 0 0 5px 0;
+}
