@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    height: 600px;
+    /* fractional unit, represent the amount of space left after all the elements are layed out. */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr; */
+    grid-template-columns: auto 1fr;
+    border: 10px solid var(--green);
+}
+
+/* Each item in our grid will contain numbers */
+
+.item {
+    /* We center the contents of these items. You can also do this with flexbox too! */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5em;
+    font-size: 2rem;
+    background-color: var(--green);
+    /* best colour */
+}
+
+.item p {
+    margin: 0 0 5px 0;
+}
