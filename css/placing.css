@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Each item in our grid will contain numbers */
+
+.item {
+    /* We center the contents of these items. You can also do this with flexbox too! */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5em;
+    font-size: 2rem;
+    background-color: var(--green);
+    /* best colour */
+}
+
+.place-me {
+    /* grid-column: span 2; */
+    
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+
+    /* start / end  */
+    grid-column: 2 / 5;
+
+    /* span 100% width of container */
+    /* grid-column: 1 / -1; */
+    grid-row: 3 / span 3;
+    background: var(--yellow);
+}
+
+.item p {
+    margin: 0 0 5px 0;
+}
